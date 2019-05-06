@@ -17,9 +17,9 @@
   <link href="css/simple-sidebar.css" rel="stylesheet">
 
 
-    <style> 
+<style> 
 body {
-  background-image: url("images/flag.png");
+  background-image: url("images/spanish-colour.jpg");
   background-color: #cccccc;
 }
 </style>
@@ -35,16 +35,20 @@ body {
       <div class="sidebar-heading">Flashcard Lessons (Nouns)</div>
       <div class="list-group list-group-flush">
         <a onclick="lesson01()" href="#" class="list-group-item list-group-item-action bg-dark">Lesson 01</a>
-        <a href="lessons/nouns/assessment01.html" class="list-group-item list-group-item-action bg-dark">Assessment Quiz 01</a>
+        <a href="assessment.html" class="list-group-item list-group-item-action bg-dark">Assessment Quiz 01</a>
 
         <a onclick="lesson02()" href="#" class="list-group-item list-group-item-action bg-dark">Lesson 02</a>
-        <a href="#" class="list-group-item list-group-item-action bg-dark">Assessment Quiz 02</a>
-        <a onclick="lesson03()" href="#" class="list-group-item list-group-item-action bg-dark">Lesson 03</a>
+
+        <a onclick="assessment02()" href="#" class="list-group-item list-group-item-action bg-dark">Assessment Quiz 02</a>
+
+        <a href="#" class="list-group-item list-group-item-action bg-dark">Lesson 03</a>
         <a href="#" class="list-group-item list-group-item-action bg-dark">Assessment Quiz 03</a>
-        <a onclick="lesson04()" href="#" class="list-group-item list-group-item-action bg-dark">Lesson 04</a>
+        <a href="#" class="list-group-item list-group-item-action bg-dark">Lesson 04</a>
         <a href="#" class="list-group-item list-group-item-action bg-dark">Assessment Quiz 04</a>
-        <a onclick="lesson05()" href="#" class="list-group-item list-group-item-action bg-dark">Lesson 05</a>
+        <a href="#" class="list-group-item list-group-item-action bg-dark">Lesson 05</a>
         <a href="#" class="list-group-item list-group-item-action bg-dark">Assessment Quiz 05</a>
+        <a href="#" class="list-group-item list-group-item-action bg-dark">Lesson 06</a>
+        <a href="#" class="list-group-item list-group-item-action bg-dark">Assessment Quiz 06</a>
       </div>
     </div>
     <!-- /#sidebar-wrapper -->
@@ -79,7 +83,9 @@ body {
 
 
 
-<iframe id="lesson" src="https://quizlet.com/398463141/flashcards/embed?i=1x136b&x=1jj1" height="900" width="100%" style="border:0"></iframe>
+<div id="assessment" class="fyrebox_quiz" data-gid="6kLgqNR2G" data-oid="V3pwGxNJ3" /></div><script src="https://cdn.fyrebox.com/javascripts/fyrebox.min.js?2" defer="defer" async></script>
+
+<div class="fyrebox_quiz" data-gid="Z0QJ3g5N8" data-oid="V3pwGxNJ3" /></div><script src="https://cdn.fyrebox.com/javascripts/fyrebox.min.js?2" defer="defer" async></script>
 
 
 <script>
@@ -93,19 +99,9 @@ function lesson02() {
   lesson02.src = "https://quizlet.com/398640157/flashcards/embed?i=1x136b&x=1jj1";
 }
 
-function lesson03() {
-  let lesson03 = document.getElementById("lesson");
-  lesson03.src = "https://quizlet.com/398695688/flashcards/embed?i=1x136b&x=1jj1";
-}
-
-function lesson04() {
-  let lesson04 = document.getElementById("lesson");
-  lesson04.src = "https://quizlet.com/398700755/flashcards/embed?i=1x136b&x=1jj1";
-}
-
-function lesson05() {
-  let lesson05 = document.getElementById("lesson");
-  lesson05.src = "https://quizlet.com/398706084/flashcards/embed?i=1x136b&x=1jj1";
+function assessment02() {
+  let assessment02 = document.getElementById("assessment");
+  assessment02.setAttribute("data-gid", "Z0QJ3g5N8");
 }
 </script>
 
