@@ -83,12 +83,19 @@ body {
 
 
 
-<div id="assessment" class="fyrebox_quiz" data-gid="6kLgqNR2G" data-oid="V3pwGxNJ3" /></div><script src="https://cdn.fyrebox.com/javascripts/fyrebox.min.js?2" defer="defer" async></script>
+<div id="assessment" class="fyrebox_quiz" data-gid="6kLgqNR2G" data-oid="V3pwGxNJ3" /></div>
+<script src="https://cdn.fyrebox.com/javascripts/fyrebox.min.js?2" defer="defer" async></script>
 
-<div class="fyrebox_quiz" data-gid="Z0QJ3g5N8" data-oid="V3pwGxNJ3" /></div><script src="https://cdn.fyrebox.com/javascripts/fyrebox.min.js?2" defer="defer" async></script>
+<div class="fyrebox_quiz" data-gid="Z0QJ3g5N8" data-oid="V3pwGxNJ3" /></div>
 
 
 <script>
+function assessment02() {
+  document.getElementById('assessment').setAttribute('onclick','data-gid(Z0QJ3g5N8)');
+}
+
+
+
 function lesson01() {
   let lesson01 = document.getElementById("lesson");
   lesson01.src = "https://quizlet.com/398463141/flashcards/embed?i=1x136b&x=1jj1";
@@ -97,11 +104,6 @@ function lesson01() {
 function lesson02() {
   let lesson02 = document.getElementById("lesson");
   lesson02.src = "https://quizlet.com/398640157/flashcards/embed?i=1x136b&x=1jj1";
-}
-
-function assessment02() {
-  let assessment02 = document.getElementById("assessment");
-  assessment02.setAttribute("data-gid", "Z0QJ3g5N8");
 }
 </script>
 
