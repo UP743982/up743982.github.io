@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Simple Sidebar - Start Bootstrap Template</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+
+
+    <style> 
+body {
+  background-image: url("images/flag.png");
+  background-color: #cccccc;
+}
+</style>
+
+</head>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-dark border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">Flashcard Lessons (Verbs)</div>
+      <div class="list-group list-group-flush">
+        <a onclick="lesson01()" href="#" class="list-group-item list-group-item-action bg-dark">Lesson 01</a>
+        <a onclick="lesson02()" href="#" class="list-group-item list-group-item-action bg-dark">Lesson 02</a>
+        <a onclick="lesson03()" href="#" class="list-group-item list-group-item-action bg-dark">Lesson 03</a>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom">
+        <button class="btn btn-primary" id="menu-toggle">All Lessons</button>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="flashcards.html">Flashcards</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="videos.html">Videos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacts.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+
+<iframe id="lesson" width="100%" height="900px" src="https://edpuzzle.com/embed/media/5c98fd6554843940b598abc7" frameborder="0" allowfullscreen></iframe>
+
+
+<script>
+function lesson01() {
+  let lesson01 = document.getElementById("lesson");
+  lesson01.src = "https://edpuzzle.com/embed/media/5c98fd6554843940b598abc7";
+}
+
+function lesson02() {
+  let lesson02 = document.getElementById("lesson");
+  lesson02.src = "https://edpuzzle.com/embed/media/5c4f463c705ec84118d9ae89";
+}
+
+function lesson03() {
+  let lesson03 = document.getElementById("lesson");
+  lesson03.src = "https://edpuzzle.com/embed/media/5c927ba5c7e5c54112dd3e13";
+}
+
+</script>
+
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
+</body>
+
+</html>
